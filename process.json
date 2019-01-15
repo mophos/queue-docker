@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "queue-web",
+      "script": "./webserver.js"
+    },
+    {
+      "name": "queue-api",
+      "scrirpt": "./queue-api/dist/app.js"
+    }
+  ]
+}
