@@ -2,11 +2,11 @@
   "apps": [
     {
       "name": "queue-web",
-      "script": "./webserver.js"
+      "script": "/home/queue/queue-web/server.js"
     },
     {
       "name": "queue-api",
-      "scrirpt": "./queue-api/dist/app.js"
+      "script": "/home/queue/queue-api/dist/app.js"
     }
   ]
 }
