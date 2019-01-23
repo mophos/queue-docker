@@ -7,6 +7,10 @@
     {
       "name": "queue-api",
       "script": "/home/queue/queue-api/dist/app.js"
+    },
+    {
+      "name": "queue-mqtt",
+      "script": "/home/queue/queue-mqtt/server.js"
     }
   ]
 }

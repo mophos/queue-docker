@@ -11,9 +11,16 @@ RUN npm i npm@latest -g
 RUN npm i -g pm2
 
 RUN git clone https://github.com/mophos/queue-web
+
 RUN git clone https://github.com/mophos/queue-api
+
+RUN git clone https://github.com/mophos/queue-mqtt
+
 RUN cd queue-web && npm i && npm run build && cd ..
+
 RUN cd queue-api && npm i && npm run build && cd ..
+
+RUN cd queue-mqtt && npm i && cd ..
 
 COPY nginx.conf /etc/nginx/
 
@@ -23,4 +30,4 @@ RUN pwd
 
 CMD /usr/sbin/nginx && /usr/bin/pm2-runtime process.json
 
-EXPOSE 80
+EXPOSE 80 8888
