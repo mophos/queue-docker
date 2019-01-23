@@ -29,5 +29,3 @@ COPY process.json .
 RUN pwd
 
 CMD /usr/sbin/nginx && /usr/bin/pm2-runtime process.json
-
-EXPOSE 80 8888
