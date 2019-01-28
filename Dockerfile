@@ -26,6 +26,4 @@ COPY nginx.conf /etc/nginx/
 
 COPY process.json .
 
-RUN pwd
-
 CMD /usr/sbin/nginx && /usr/bin/pm2-runtime process.json
