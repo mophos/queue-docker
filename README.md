@@ -2,15 +2,17 @@
 
 # Docker image for Q4U ![Travis (.org)](https://img.shields.io/travis/mophos/queue-web.svg?label=web) ![Travis (.org)](https://img.shields.io/travis/mophos/queue-api.svg?label=api) [![](https://images.microbadger.com/badges/version/mophos/queue.svg)](https://microbadger.com/images/mophos/queue "Q4U Docker image") [![](https://images.microbadger.com/badges/image/mophos/queue.svg)](https://microbadger.com/images/mophos/queue "Q4U Docker image")
 
+## ฐานข้อมูลและไฟล์คอนฟิก่าสุดอยู่ที่ https://github.com/mophos/queue-docker-example
 
 # Last update
 
-## 2019-02-28 14:50 (v2.4)
+## 2019-03-1 11:45 (v2.4)
 - แก้ไขการแสดงผลหน้าจอเรียกคิวแบบกลุ่ม
 - เพื่อการเชื่อมต่อฐาน `dhos`
 - แก้ไขการเชื่อมต่อฐาน `ezhos`
 - เพิ่มการเรียกใช้งานหน้าจอแสดงคิวรับบริการทั้งหมดโดยเรียกผ่าน url: `http://xx.xx.xx.xx:xx/#/queue-center-patient?token=TOKEN` โดยที่ `TOKEN` ได้จากหน้า `Generate token`
 - fixed MQTT authentication
+- แก้ไขการเรียกคิว/แสดงคิว แบบกลุ่ม
 
 ## 2019-02-27 15:20 (v2.3)
 - แก้ไขปัญหาเครื่องพิมพ์ไม่พิมพ์หลังจากสร้างคิว
