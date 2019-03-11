@@ -4,7 +4,7 @@ LABEL maintainer="Satit Rianpit <rianpit@gmail.com>"
 
 WORKDIR /home/queue
 
-RUN apk add --no-cache --virtual deps python build-base
+RUN apk add --upgrade --no-cache --virtual deps python build-base
 
 RUN npm i npm@latest -g
 
