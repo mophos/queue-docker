@@ -2,7 +2,7 @@
 
 # Docker image for Q4U ![Travis (.org)](https://img.shields.io/travis/mophos/queue-web.svg?label=web) ![Travis (.org)](https://img.shields.io/travis/mophos/queue-api.svg?label=api) [![](https://images.microbadger.com/badges/version/mophos/queue.svg)](https://microbadger.com/images/mophos/queue "Q4U Docker image") [![](https://images.microbadger.com/badges/image/mophos/queue.svg)](https://microbadger.com/images/mophos/queue "Q4U Docker image")
 
-## ฐานข้อมูลและไฟล์คอนฟิก่าสุดอยู่ที่ https://github.com/mophos/queue-docker-example
+## ฐานข้อมูลและไฟล์คอนฟิกล่าสุดอยู่ที่ https://github.com/mophos/queue-docker-example
 
 # Last update
 
