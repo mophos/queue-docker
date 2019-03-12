@@ -4,7 +4,7 @@
 
 ## ฐานข้อมูลและไฟล์คอนฟิกล่าสุดอยู่ที่ https://github.com/mophos/queue-docker-example
 
-# Last update
+# Last updated
 
 ## 2019-03-12 10:17 (v2.7)
 - เพิ่มการออกคิวจากประเภทผู้ป่วย (อัปเดทฐานข้อมูล)
