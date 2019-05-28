@@ -6,6 +6,10 @@
 
 # Last updated
 
+## 2019-05-28 14:00 (v3.3.0)
+- เพิ่มหน้า KIOSK
+- เพิ่มประเภทผู้ใช้งาน
+- `ALTER TABLE q4u_users MODIFY COLUMN user_type enum('ADMIN','MEMBER','KIOSK');`
 
 ## 2019-04-30 10:00 (v3.2.5)
 - แก้ไข Bug การแสดงคิวปัจจุบันในหน้าจอแสดงคิว firefox ไม่แสดงผล
