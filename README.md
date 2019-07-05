@@ -6,6 +6,20 @@
 
 # Last updated
 
+## 2019-07-05 09:00 (v3.4.0)
+- เพิ่มค้นหาหน้าเรียกคิวห้องตรวจ
+- เพิ่มตั้งค่าลำดับความสำคัญของประเภทผู้ป่วย
+- เพิ่มการเรียงลำดับความสำคัญ หน้าเรียกคิวห้องตรวจ(แถบรอเรียก),หน้าเรียกคิวแผนก (แถบรอเรียก)
+- ปรับการตั้งค่าเสียงให้ตั้งค่าได้ถึงช่องบริการ
+```
+ALTER TABLE `q4u_priorities` ADD COLUMN `priority_color` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `priority_prefix`;
+ALTER TABLE `q4u_priorities` ADD COLUMN `priority_order` int(11) NULL DEFAULT 1 AFTER `priority_color`;
+ALTER TABLE `q4u_priorities` DROP COLUMN `prority_color`;
+ALTER TABLE `q4u_service_points` MODIFY COLUMN `sound_speed` decimal(3, 2) NULL DEFAULT NULL COMMENT 'ความเร็วเสียงเรียก' AFTER `sound_id`;
+ALTER TABLE `q4u_service_rooms` ADD COLUMN `sound_id` int(11) NULL DEFAULT NULL AFTER `room_id`;
+ALTER TABLE `q4u_service_rooms` DROP PRIMARY KEY;
+ALTER TABLE `q4u_service_rooms` ADD PRIMARY KEY (`room_id`) USING BTREE;
+```
 
 ## 2019-06-13 16:10 (v3.3.1)
 - ปรับลำดับการแสดงผลคิว
