@@ -6,6 +6,9 @@
 
 # Last updated
 
+## 2019-08-03 22:00 (v3.4.2)
+- แก้ไข หน้าจอ KIOSK ให้พิมพ์บัตรคิวเล็กตามที่ตั้งค่าได้
+
 ## 2019-07-23 21:30 (v3.4.1)
 - แก้ไข หน้าจอแสดงคิวแผนก ไม่ออกเสียงตามที่เรียกจาก queue caller desktop 
 - เพิ่มจำค่าจุดบริการ หน้าเรียกคิว
@@ -24,6 +27,7 @@ ALTER TABLE `q4u_service_rooms` ADD COLUMN `sound_id` int(11) NULL DEFAULT NULL 
 ALTER TABLE `q4u_service_rooms` DROP PRIMARY KEY;
 ALTER TABLE `q4u_service_rooms` ADD PRIMARY KEY (`room_id`) USING BTREE;
 ```
+
 
 ## 2019-06-13 16:10 (v3.3.1)
 - ปรับลำดับการแสดงผลคิว
